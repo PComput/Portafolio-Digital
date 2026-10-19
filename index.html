@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Digital Portfolio </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        p {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 14px;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Courier New', Courier, monospace !important;
+            font-weight: bold;
+            font-size: 24px !important;
+        }
+
+        body {
+            cursor: url(MouseHelloKitty.png), auto;
+        }
+
+        a, button, svg, .cursor-pointer {
+            cursor: url(ClickHelloKitty.png), pointer !important;
+        }
+
+        .ventana-retro {
+            background-color: #dfdfdf !important;
+            border: 3px outset #ffffff !important;
+            color: #000000 !important;
+        }
+
+        .divisor-retro {
+            border-top: 2px solid #000080;
+
+        }
+    </style>
+</head>
+
+<body class="bg-[url('WindowsBG.jpg')] bg-cover bg-fixed bg-center min-h-screen p-4 md:p-8 flex items-center justify-center">
+    <div class="rounded-lg shadow-2xl w-full max-w-7xl overflow-hidden flex flex-col my-auto">
+        <div class="bg-[#000080] text-white p-3 font-bold text-lg flex justify-between items-center select-none">
+            <span class="font-mono"> Digital Portfolio.exe </span>
+            <div class="flex gap-1">
+                <button class="w-5 h-5 bg-[#dfdfdf] border border-white text-black font-bold text-[10px] flex items-center justify-center shadow-sm">_</button>
+                <button class="w-5 h-5 bg-[#dfdfdf] border border-white text-black font-bold text-[10px] flex items-center justify-center shadow-sm">🗖</button>
+                <button class="w-5 h-5 bg-[#dfdfdf] border border-white text-black font-bold text-[10px] flex items-center justify-center shadow-sm">X</button>
+            </div>
+        </div>
+        <div class="backdrop-blur-sm bg-slate-950/40 min-h-screen p-6 space-y-8 relative z-10 flex flex-col text-white">
+
+            <div class="bg-[url('Banner.jpg')] bg-fixed bg-cover bg-center h-64 w-full rounded-md border-2 border-slate-700 shadow-lg">
+            </div>
+
+            <div class="ventana-retro rounded-lg shadow-md w-full overflow-hidden">
+                <div class="bg-[#000080] text-white p-2 font-bold text-sm flex justify-between items-center select-none">
+                    <span class="font-mono">Internet Explorer - Windows 95 </span>
+                    <div class="flex gap-1">
+                        <button class="w-4 h-4 bg-[#dfdfdf] border border-white text-black font-bold text-[9px] flex items-center justify-center shadow-sm">_</button>
+                        <button class="w-4 h-4 bg-[#dfdfdf] border border-white text-black font-bold text-[9px] flex items-center justify-center shadow-sm">🗖</button>
+                        <button class="w-4 h-4 bg-[#dfdfdf] border border-white text-black font-bold text-[9px] flex items-center justify-center shadow-sm">X</button>
+                    </div>
+                </div>
+                <marquee class="p-2 font-mono text-lg text-black"> ¡Bienvenido a mi portafolio! ✶⋆.˚ ¡Disfruta tu estadía!  ✶⋆.˚</marquee>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-[224px_1fr] gap-6 items-start w-full max-w-6xl mx-auto px-4">
+
+                <div class="flex flex-col gap-4 w-full md:w-56 shrink-0 mx-auto md:mx-0">
+                    <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-slate-700 mx-auto md:mx-0 bg-[url('ZonaHackClub.jpg')] bg-cover bg-center">
+                    </div>
+
+                    <div class="text-left font-mono space-y-1 text-sm bg-slate-800/40 p-3 rounded-md border border-slate-700">
+                        <p><strong>Nombre:</strong> Paula Carin </p>
+                        <p><strong>Edad:</strong> 17</p>
+                        <p><strong>Ubicación:</strong> Guatemala</p>
+                        <p><strong>Contacto:</strong> paulacarinka@gmail.com</p>
+                    </div>
+                    
+                    <div class="ventana-retro w-full p-1 flex flex-col rounded-lg shadow-md text-black">
+                        <div class="bg-[#000080] text-white p-1.5 font-bold text-xs flex justify-between items-center select-none">
+                            <span class="font-mono">Instrucciones.exe</span>
+                            <div class="flex gap-1">
+                                <button class="w-3.5 h-3.5 bg-[#dfdfdf] border border-white text-black font-bold text-[8px] flex items-center justify-center shadow-sm">_</button>
+                                <button class="w-3.5 h-3.5 bg-[#dfdfdf] border border-white text-black font-bold text-[8px] flex items-center justify-center shadow-sm">🗖</button>
+                                <button class="w-3.5 h-3.5 bg-[#dfdfdf] border border-white text-black font-bold text-[8px] flex items-center justify-center shadow-sm">X</button>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-[#ece9d8]">
+                            <p class="text-[12px] text-black font-mono">
+                                ¡Bienvenido a mi portafolio! ✶⋆.˚
+                                Aquí encontrarás información sobre mí, mis proyectos y una sección de visitas para dejar tus comentarios.
+                                Explora y disfruta. ¡Gracias por visitar! ✶⋆.˚
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ventana-retro rounded-lg shadow-md w-full p-3 flex flex-col gap-2 font-mono text-black">
+                        <p class="text-xs text-center font-bold"> 💿 CD Player</p>
+                        <div class="flex items-center justify-between text-[11px] font-mono mb-2">
+                            <span id="current-time">00:00</span>
+                            <input type="range" id="progress-bar" min="0" max="100" value="0" class="w-24 mx-2 accent-[#000080]">
+                            <span id="total-time">00:00</span>
+                        </div>
+                        <div class="flex flex-row gap-3 justify-center items-center text-sm mt-1">
+                            <button id="btn-prev" class="w-7 h-7 bg-[#dfdfdf] border-2 border-white active:border-inset text-xs font-bold shadow-sm">⏮</button>
+                            <button id="btn-play-pause" class="w-8 h-8 bg-[#dfdfdf] border-2 border-white active:border-inset text-sm font-bold shadow-sm">▶</button>
+                            <button id="btn-stop" class="w-7 h-7 bg-[#dfdfdf] border-2 border-white active:border-inset text-xs font-bold shadow-sm">⏹</button>
+                            <button id="btn-next" class="w-7 h-7 bg-[#dfdfdf] border-2 border-white active:border-inset text-xs font-bold shadow-sm">⏭</button>
+                        </div>
+                        <audio id="audio-elemento">
+                            <source src="cancion.ogg" type="audio/ogg">
+                            <source src="cancion.mp3" type="audio/mpeg">
+                            Tu navegador no soporta audio. No importa, ¡puedes tararear tu canción favorita!
+                        </audio>
+                    </div>
+                    <div class="ventana-retro w-full p-1 flex flex-col rounded-lg shadow-md text-black">
+                        <div class="bg-[#000080] text-white p-1.5 font-bold text-xs flex justify-between items-center select-none">
+                            <span class="font-mono">♫⋆｡♪ ₊˚♬ ﾟ..exe</span>
+                            <div class="flex gap-1">
+                                <button class="w-3.5 h-3.5 bg-[#dfdfdf] border border-white text-black font-bold text-[8px] flex items-center justify-center shadow-sm">_</button>
+                                <button class="w-3.5 h-3.5 bg-[#dfdfdf] border border-white text-black font-bold text-[8px] flex items-center justify-center shadow-sm">🗖</button>
+                                <button class="w-3.5 h-3.5 bg-[#dfdfdf] border border-white text-black font-bold text-[8px] flex items-center justify-center shadow-sm">X</button>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-[#ece9d8]">
+                            <p class="text-[12px] text-black font-mono">
+                                Haz click en los botones para activar la música. Puedes pausar, reproducir o detener la canción. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ventana-retro w-full p-1 flex flex-col rounded-lg shadow-md text-black">
+                        <div class="bg-[#000080] text-white p-1.5 font-bold text-xs flex justify-between items-center select-none">
+                            <span class="font-mono">Photo.exe</span>
+                            <div class="flex gap-1">
+                                <button class="w-3.5 h-3.5 bg-[#dfdfdf] border border-white text-black font-bold text-[8px] flex items-center justify-center shadow-sm">_</button>
+                                <button class="w-3.5 h-3.5 bg-[#dfdfdf] border border-white text-black font-bold text-[8px] flex items-center justify-center shadow-sm">🗖</button>
+                                <button class="w-3.5 h-3.5 bg-[#dfdfdf] border border-white text-black font-bold text-[8px] flex items-center justify-center shadow-sm">X</button>
+                            </div>
+                        </div>
+                        <div class="p-2 bg-[#ece9d8]">
+                            <div class="bg-white border-2 border-inset border-gray-500 p-1 flex items-center justify-center overflow-hidden h-40">
+                                <img src="Photo.exe" alt="Photo" class="w-full h-full object-cover border border-gray-300">
+                            </div>
+                            <div class="mt-1 pt-0.5 border-t border-gray-400 flex justify-between text-[10px] text-gray-700 px-1 font-mono">
+                                <span>object(s) selected</span>
+                                <span>240 KB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-[1fr_280px] gap-6 w-full items-start">
+
+                    <div class="flex flex-col gap-6 w-full">
+
+                        <article class="ventana-retro rounded-lg shadow-md w-full h-72 flex flex-col">
+                            <div class="bg-[#000080] text-white p-2 font-bold text-sm flex justify-between items-center select-none">
+                                <span class="text-xs font-mono">¿Quién soy yo?</span>
+                                <div class="flex gap-1">
+                                    <button class="w-4 h-4 bg-[#dfdfdf] border border-white text-black font-bold text-[9px] flex items-center justify-center shadow-sm">_</button>
+                                    <button class="w-4 h-4 bg-[#dfdfdf] border border-white text-black font-bold text-[9px] flex items-center justify-center shadow-sm">🗖</button>
+                                    <button class="w-4 h-4 bg-[#dfdfdf] border border-white text-black font-bold text-[9px] flex items-center justify-center shadow-sm">X</button>
+                                </div>
+                            </div>
+                            <div class="p-5 overflow-y-auto flex-1 bg-white m-1 border border-inset border-gray-400">
+                                <p class="text-justify text-black text-base leading-relaxed">
+                                    Soy Paula Carin, un estudiante de 17 años de Guatemala.
+                                    Me apasiona la tecnología, la róbotica, el modelado 3D y el diseño. Actualmente, me dedico a aprender y explorar nuevas habilidades en estas áreas, buscando siempre mejorar y crear proyectos innovadores inspirados en lo que más me gusta, los videojuegos.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="ventana-retro rounded-lg shadow-md w-full h-[760px] flex flex-col">
+                            <div class="bg-[#000080] text-white p-2 font-bold text-sm flex justify-between items-center select-none">
+                                <span class="text-xs font-mono">¿Qué hago?</span>
+                                <div class="flex gap-1">
+                                    <button class="w-4 h-4 bg-[#dfdfdf] border border-white text-black font-bold text-[9px] flex items-center justify-center shadow-sm">_</button>
+                                    <button class="w-4 h-4 bg-[#dfdfdf] border border-white text-black font-bold text-[9px] flex items-center justify-center shadow-sm">🗖</button>
+                                    <button class="w-4 h-4 bg-[#dfdfdf] border border-white text-black font-bold text-[9px] flex items-center justify-center shadow-sm">X</button>
+                                </div>
+                            </div>
+                            <div class="p-5 overflow-y-auto flex-1 bg-white m-1 border border-inset border-gray-400 space-y-4">
+                                <p class="text-black text-base">
+                                    Me gusta hacer proyectos de hardware pequeños (principalmente para el colegio), cosplay e impresión 3D.
+                                    Aquí están algunas fotos y videos de mi trabajo.
+                                </p>
+
+                                <div class="bg-[#dfdfdf] p-2 border-2 border-white shadow-sm rounded">
+                                    <div class="text-[11px] font-mono text-gray-700 font-bold mb-1">Project1.mp4</div>
+                                    <video class="w-full h-auto block pointer-events-auto select-none" controls preload="metadata" playsinline>
+                                        <source src="Project2.mp4" type="video/mp4">
+                                        Tu navegador no soporta videos, ¡puedes escribirme un correo y solicitarlo!
+                                    </video>
+                                    <p class="text-black text-xs mt-2 bg-white p-2 border border-inset border-gray-400">
+                                        <strong> Proyecto de robótica: </strong> Este es un detector de tsunamis. Usamos un sensor ultrasónico aprueba de agua para medir el nivel del agua. Cuando el agua se acerca demasiado al sensor, envía una señal al propietario a través de la app Blynk.
+                                    </p>
+                                </div>
+
+                                <div class="bg-[#dfdfdf] p-2 border-2 border-white shadow-sm rounded">
+                                    <div class="text-[11px] font-mono text-gray-700 font-bold mb-1">Project2.jpg</div>
+                                    <div class="bg-white border-2 border-inset border-gray-500 p-1 flex items-center justify-center overflow-hidden">
+                                        <img src="Project1.jpeg" alt="Description" class="w-full h-auto object-cover border border-gray-300">
+                                    </div>
+                                    <p class="text-black text-xs mt-2 bg-white p-2 border border-inset border-gray-400">
+                                        <strong> Proyecto de robótica: </strong> Este es un sistema simple de iluminación controlado por Blynk. Fueron las primeras pruebas para después crear el proyecto de casa automática. Utilizamos led, resistencias y un módulo esp8266 para controlar el sistema de iluminación.
+                                    </p>
+                                </div>
+
+                                <div class="bg-[#dfdfdf] p-2 border-2 border-white shadow-sm rounded">
+                                    <div class="text-[11px] font-mono text-gray-700 font-bold mb-1">Project3.mp4</div>
+                                    <video class="w-full h-auto block pointer-events-auto select-none" controls preload="metadata" playsinline>
+                                        <source src="Project3.mp4" type="video/mp4">
+                                        Tu navegador no soporta videos, ¡puedes escribirme un correo y solicitarlo!
+                                    </video>
+                                    <p class="text-black text-xs mt-2 bg-white p-2 border border-inset border-gray-400">
+                                        <strong> Proyecto de robótica: </strong> Este es un sistema RGB controlado por Blynk. Fue para el mismo proyecto de casa automática.
+                                    </p>
+                                </div>
+
+                                <div class="bg-[#dfdfdf] p-2 border-2 border-white shadow-sm rounded">
+                                    <div class="text-[11px] font-mono text-gray-700 font-bold mb-1">Project4.mp4</div>
+                                    <video class="w-full h-auto block pointer-events-auto select-none" controls preload="metadata" playsinline>
+                                        <source src="Project4.mp4" type="video/mp4">
+                                        Tu navegador no soporta videos, ¡puedes escribirme un correo y solicitarlo!
+                                    </video>
+                                    <p class="text-black text-xs mt-2 bg-white p-2 border border-inset border-gray-400">
+                                        <strong> Proyecto de robótica: </strong> El proyecto de automatización doméstica controlado por Blynk.
+                                    </p>
+                                </div>
+
+                                <div class="bg-[#dfdfdf] p-2 border-2 border-white shadow-sm rounded">
+                                    <div class="text-[11px] font-mono text-gray-700 font-bold mb-1">Project5.jpg</div>
+                                    <div class="bg-white border-2 border-inset border-gray-500 p-1 flex items-center justify-center overflow-hidden">
+                                        <img src="Project5.jpeg" alt="Description" class="w-full h-auto object-cover border border-gray-300">
+                                    </div>
+                                    <p class="text-black text-xs mt-2 bg-white p-2 border border-inset border-gray-400">
+                                        <strong> Proyecto de robótica: </strong> Esta es la app creada en el entorno de "Blynk" para controlar el proyecto de casa automática. En ella puede controlarse las luces, el sistema RGB y la humedad y temperatura del entorno.
+                                    </p>
+                                </div>
+
+                                <div class="bg-[#dfdfdf] p-2 border-2 border-white shadow-sm rounded">
+                                    <div class="text-[11px] font-mono text-gray-700 font-bold mb-1">Project6.jpg</div>
+                                    <div class="bg-white border-2 border-inset border-gray-500 p-1 flex items-center justify-center overflow-hidden">
+                                        <img src="Project8.jpg" alt="Description" class="w-full h-auto object-cover border border-gray-300">
+                                    </div>
+                                    <p class="text-black text-xs mt-2 bg-white p-2 border border-inset border-gray-400">
+                                        <strong> Blender: </strong> Una pequeña práctica de modelado 3D acompañado de un tutorial en YouTube. Fue un ejercicio para aprender a modelar y texturizar en Blender.
+                                    </p>
+                                </div>
+
+                                <div class="bg-[#dfdfdf] p-2 border-2 border-white shadow-sm rounded">
+                                    <div class="text-[11px] font-mono text-gray-700 font-bold mb-1">Project7.jpg</div>
+                                    <div class="bg-white border-2 border-inset border-gray-500 p-1 flex items-center justify-center overflow-hidden">
+                                        <img src="Project6.jpeg" alt="Description" class="w-full h-auto object-cover border border-gray-300">
+                                    </div>
+                                    <p class="text-black text-xs mt-2 bg-white p-2 border border-inset border-gray-400">
+                                        <strong> Proyecto: </strong> Estas son las primeras piezas de mi cosplay de "Whitered Chica" un personaje de la saga de videojuegos Five Nights at Freddy's. La cabeza fue modelada en Blender y luego impresa en 3D.
+                                    </p>
+                                </div>
+
+                                <div class="bg-[#dfdfdf] p-2 border-2 border-white shadow-sm rounded">
+                                    <div class="text-[11px] font-mono text-gray-700 font-bold mb-1">Project8.jpg</div>
+                                    <div class="bg-white border-2 border-inset border-gray-500 p-1 flex items-center justify-center overflow-hidden">
+                                        <img src="Project7.jpeg" alt="Description" class="w-full h-auto object-cover border border-gray-300">
+                                    </div>
+                                    <p class="text-black text-xs mt-2 bg-white p-2 border border-inset border-gray-400">
+                                        <strong> Hi </strong>
+                                    </p>
+                                </div>
+
+                                <div class="bg-[#dfdfdf] p-2 border-2 border-white shadow-sm rounded">
+                                    <div class="text-[11px] font-mono text-gray-700 font-bold mb-1">Project9.jpg</div>
+                                    <div class="bg-white border-2 border-inset border-gray-500 p-1 flex items-center justify-center overflow-hidden">
+                                        <img src="Project9.jpeg" alt="Description" class="w-full h-auto object-cover border border-gray-300">
+                                    </div>
+                                    <p class="text-black text-xs mt-2 bg-white p-2 border border-inset border-gray-400">
+                                        <strong> Este fue el resultado final de mi cosplay. El cuerpo fue realizado con esponja y materiales reciclados, la cabeza como ya vieron arriba, es 100% impresión 3D. </strong>
+                                    </p>
+                                </div>
+
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="w-full h-full flex flex-col">
+                        <article class="ventana-retro rounded-lg shadow-md w-full flex-1 flex flex-col">
+                            <div class="bg-[#000080] text-white p-2 font-bold text-sm flex justify-between items-center select-none">
+                                <span class="text-xs font-mono">Visitas.exe</span>
+                                <div class="flex gap-1">
+                                    <button class="w-4 h-4 bg-[#dfdfdf] border border-white text-black font-bold text-[9px] flex items-center justify-center shadow-sm">_</button>
+                                    <button class="w-4 h-4 bg-[#dfdfdf] border border-white text-black font-bold text-[9px] flex items-center justify-center shadow-sm">🗖</button>
+                                    <button class="w-4 h-4 bg-[#dfdfdf] border border-white text-black font-bold text-[9px] flex items-center justify-center shadow-sm">X</button>
+                                </div>
+                            </div>
+                            <div class="p-4 overflow-y-auto flex-1 bg-white m-1 border border-inset border-gray-400 font-mono text-black text-sm flex flex-col gap-4">
+                                
+                                <div class="text-center bg-[#dfdfdf] p-2 border-2 border-white shadow-sm rounded">
+                                    <p class="text-[10px] font-bold uppercase tracking-wider text-gray-700 mb-1">📟 Eres el visitante:</p>
+                                    <div id="visitor-counter" class="bg-black text-red-500 font-mono font-bold text-2xl px-3 py-0.5 border-2 border-inset border-gray-500 inline-block tracking-widest rounded-sm">
+                                        0000000
+                                    </div>
+                                </div>
+                                
+                                <div class="flex flex-col gap-2 flex-1">
+                                    <p class="font-bold border-b border-gray-300 pb-1 text-xs text-blue-900 flex items-center gap-1">
+                                        📝 ¡Deja un mensaje!
+                                    </p>
+                                    <div>
+                                        <label class="block text-[11px] font-bold text-gray-700 mb-0.5">Nombre:</label>
+                                        <input type="text" id="guest-name" class="w-full bg-white border-2 border-inset border-gray-400 p-1 text-xs focus:outline-none focus:border-blue-800" placeholder="Usuario">
+                                    </div>
+                                    <div>
+                                        <label class="block text-[11px] font-bold text-gray-700 mb-0.5">Mensaje:</label>
+                                        <textarea id="guest-msg" class="w-full bg-white border-2 border-inset border-gray-400 p-1 text-xs h-20 resize-none focus:outline-none focus:border-blue-800" placeholder="Deja un comentario..."></textarea>
+                                    </div>
+                                    <button id="submit-btn" class="self-start px-3 py-1 bg-[#dfdfdf] border-2 border-white active:border-inset font-bold text-xs shadow-sm hover:bg-gray-100 flex items-center gap-1">
+                                        💾 Subir comentario
+                                    </button>
+                                </div>
+                                
+                                <div id="comments-container" class="border-t border-gray-300 pt-2 space-y-2 max-h-36 overflow-y-auto">
+                                    <p class="text-[11px] font-bold text-gray-600"> Mensajes recientes:</p>
+                                    <div class="bg-gray-100 p-2 border border-dashed border-gray-400 text-xs rounded-sm">
+                                        <span class="text-blue-800 font-bold">Admin_Pau:</span> Gracias por visitar mi portafolio. ✶⋆.˚
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="divisor-retro w-full mt-2"></div>
+
+  
+            <div class="bg-transparent p-2 px-4 flex justify-between items-center font-mono text-xs text-white shrink-0 select-none">
+
+                </span>
+                <span>Creado por Paula ✶⋆.˚</span>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        const audio = document.getElementById('audio-elemento');
+        const btnPlayPause = document.getElementById('btn-play-pause');
+        const btnStop = document.getElementById('btn-stop');
+        const progressBar = document.getElementById('progress-bar');
+        const currentTimeDisplay = document.getElementById('current-time');
+        const totalTimeDisplay = document.getElementById('total-time');
+
+        function formatTime(seconds) {
+            if (isNaN(seconds)) return "00:00";
+            const mins = Math.floor(seconds / 60).toString().padStart(2, '0');
+            const secs = Math.floor(seconds % 60).toString().padStart(2, '0');
+            return `${mins}:${secs}`;
+        }
+
+        btnPlayPause.addEventListener('click', () => {
+            if (audio.paused) {
+                audio.play();
+                btnPlayPause.textContent = "⏸";
+            } else {
+                audio.pause();
+                btnPlayPause.textContent = "▶";
+            }
+        });
+
+        btnStop.addEventListener('click', () => {
+            audio.pause();
+            audio.currentTime = 0;
+            btnPlayPause.textContent = "▶";
+        });
+
+        audio.addEventListener('timeupdate', () => {
+            const progress = (audio.currentTime / audio.duration) * 100;
+            progressBar.value = progress || 0;
+            currentTimeDisplay.textContent = formatTime(audio.currentTime);
+        });
+
+        audio.addEventListener('loadedmetadata', () => {
+            totalTimeDisplay.textContent = formatTime(audio.duration);
+        });
+
+        progressBar.addEventListener('input', () => {
+            const seekTime = (progressBar.value / 100) * audio.duration;
+            audio.currentTime = seekTime;
+        });
+    </script>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+        import { getDatabase, ref, push, onValue, runTransaction } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-database.js";
+        import { firebaseConfig } from './firebase-config.js';
+
+        const app = initializeApp(firebaseConfig);
+
+        const dbUrl = firebaseConfig.databaseURL || "https://portafolio-digital-b06d5-default-rtdb.firebaseio.com/";
+        const db = getDatabase(app, dbUrl);
+
+        const counterRef = ref(db, 'visitas');
+        const messagesRef = ref(db, 'mensajes');
+
+        runTransaction(counterRef, (currentValue) => {
+            return (currentValue || 0) + 1;
+        }).then((result) => {
+            const totalVisits = result.snapshot.val();
+            const counterElement = document.getElementById('visitor-counter');
+            if (counterElement) {
+                counterElement.innerText = String(totalVisits).padStart(7, '0');
+            }
+        }).catch((error) => {
+            console.error("Error en el contador:", error);
+        });
+
+        onValue(messagesRef, (snapshot) => {
+            const container = document.getElementById('comments-container');
+            if (!container) return;
+
+            container.innerHTML = `
+                <p class="text-[11px] font-bold text-gray-600">Mensajes recientes:</p>
+                <div class="bg-gray-100 p-2 border border-dashed border-gray-400 text-xs rounded-sm">
+                    <span class="text-blue-800 font-bold">Admin_Pau:</span> Gracias por visitar mi portafolio. ✶⋆.˚
+                </div>
+            `;
+
+            if (snapshot.exists()) {
+                const data = snapshot.val();
+                Object.values(data).reverse().forEach(entry => {
+                    if (entry.name && entry.msg) {
+                        const messageDiv = document.createElement('div');
+                        messageDiv.className = "bg-gray-50 p-2 border border-gray-300 text-xs rounded-sm font-mono text-black mt-2";
+
+                        const safeName = entry.name.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                        const safeMsg = entry.msg.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+                        messageDiv.innerHTML = `<span class="text-gray-700 font-bold">${safeName}:</span> ${safeMsg}`;
+                        container.appendChild(messageDiv);
+                    }
+                });
+            }
+        });
+
+        const submitBtn = document.getElementById('submit-btn');
+        if (submitBtn) {
+            submitBtn.addEventListener('click', () => {
+                const nameInput = document.getElementById('guest-name');
+                const msgInput = document.getElementById('guest-msg');
+
+                const name = nameInput.value.trim() || "Usuario";
+                const msg = msgInput.value.trim();
+
+                if (msg === "") {
+                    alert("Escribe un mensaje antes de enviar. 📝");
+                    return;
+                }
+
+                push(messagesRef, {
+                    name: name,
+                    msg: msg,
+                    timestamp: Date.now()
+                }).then(() => {
+                    msgInput.value = ""; 
+                }).catch((error) => {
+                    alert("Error.❌");
+                });
+            });
+        }
+    </script>
+</body>
+</html>
